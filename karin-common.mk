@@ -137,3 +137,35 @@ PRODUCT_PACKAGES += \
     FMRadio \
     brcm-uim-sysfs \
     libfmjni
+
+# Recovery
+TARGET_TWRP_FSTAB := true
+PROJECT_PATH_AGREES := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_THEME := landscape_hdpi
+#BOARD_HAS_NO_REAL_SDCARD := true
+TW_HAS_NO_RECOVERY_PARTITION := true
+TW_IGNORE_ABS_MT_TRACKING_ID := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
+
+PRODUCT_COPY_FILES += \
+    vendor/sony/karin_windy/proprietary/vendor/bin/touch_fusion:recovery/root/vendor/bin/touch_fusion \
+    vendor/sony/karin_windy/proprietary/vendor/firmware/max11945.bin:recovery/root/vendor/firmware/max11945.bin \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0000.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0000.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0700.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0700.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0701.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0701.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0702.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0702.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0704.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0704.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0705.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0705.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0706.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0706.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0708.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0708.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0709.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0709.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x070A.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x070A.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x070C.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x070C.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x070D.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x070D.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0710.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0710.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0717.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0717.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x071B.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x071B.cfg \
+    vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x071F.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x071F.cfg \
+    device/sony/karin_windy/recovery/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
