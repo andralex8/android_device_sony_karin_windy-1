@@ -168,4 +168,5 @@ PRODUCT_COPY_FILES += \
     vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x0717.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x0717.cfg \
     vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x071B.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x071B.cfg \
     vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x071F.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x071F.cfg \
-    device/sony/karin_windy/recovery/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/sony/karin_windy/recovery/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/sony/karin_windy/recovery/rootdir/sbin/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
