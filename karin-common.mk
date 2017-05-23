@@ -149,6 +149,7 @@ TW_HAS_NO_RECOVERY_PARTITION := true
 TW_IGNORE_ABS_MT_TRACKING_ID := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_USE_MINUI_CUSTOM_FONTS := true
+TW_INCLUDE_CRYPTO := true
 
 PRODUCT_COPY_FILES += \
     vendor/sony/karin_windy/proprietary/vendor/bin/touch_fusion:recovery/root/vendor/bin/touch_fusion \
@@ -171,3 +172,29 @@ PRODUCT_COPY_FILES += \
     vendor/sony/karin_windy/proprietary/vendor/etc/touch_fusion_panel_id_0x071F.cfg:recovery/root/vendor/etc/touch_fusion_panel_id_0x071F.cfg \
     device/sony/karin_windy/recovery/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
     device/sony/karin_windy/recovery/rootdir/sbin/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+	
+
+PRODUCT_COPY_FILES += \
+    device/sony/karin_windy/recovery/rootdir/init.recovery.qcom.rc:/root/init.recovery.qcom.rc \
+    device/sony/karin_windy/recovery/rootdir/sbin/qseecomd:recovery/root/sbin/qseecomd \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libdiag.so:recovery/root/vendor/lib64/libdiag.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libdrmfs.so:recovery/root/vendor/lib64/libdrmfs.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libdrmtime.so:recovery/root/vendor/lib64/libdrmtime.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libQSEEComAPI.so:recovery/root/vendor/lib64/libQSEEComAPI.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/librpmb.so:recovery/root/vendor/lib64/librpmb.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libssd.so:recovery/root/vendor/lib64/libssd.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libsecureui.so:recovery/root/vendor/lib64/libsecureui.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libsecureui_svcsock.so:recovery/root/vendor/lib64/libsecureui_svcsock.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/libStDrvInt.so:recovery/root/vendor/lib64/libStDrvInt.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/lib-sec-disp.so:recovery/root/vendor/lib64/lib-sec-disp.so \
+    device/sony/karin_windy/recovery/rootdir/vendor/lib64/hw/keystore.msm8994.so:recovery/root/vendor/lib64/hw/keystore.msm8994.so \
+   device/sony/karin_windy/recovery/rootdir/etc/firmware/cmnlib.b00:recovery/root/etc/firmware/cmnlib.b00 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/cmnlib.b01:recovery/root/etc/firmware/cmnlib.b01 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/cmnlib.b02:recovery/root/etc/firmware/cmnlib.b02 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/cmnlib.b03:recovery/root/etc/firmware/cmnlib.b03 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/cmnlib.mdt:recovery/root/etc/firmware/cmnlib.mdt \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/tzsuntory.b00:recovery/root/etc/firmware/tzsuntory.b00 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/tzsuntory.b01:recovery/root/etc/firmware/tzsuntory.b01 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/tzsuntory.b02:recovery/root/etc/firmware/tzsuntory.b02 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/tzsuntory.b03:recovery/root/etc/firmware/tzsuntory.b03 \
+    device/sony/karin_windy/recovery/rootdir/etc/firmware/tzsuntory.mdt:recovery/root/etc/firmware/tzsuntory.mdt
