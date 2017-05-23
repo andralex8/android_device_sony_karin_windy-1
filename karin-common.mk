@@ -148,6 +148,7 @@ TW_THEME := landscape_hdpi
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_IGNORE_ABS_MT_TRACKING_ID := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
+TW_USE_MINUI_CUSTOM_FONTS := true
 
 PRODUCT_COPY_FILES += \
     vendor/sony/karin_windy/proprietary/vendor/bin/touch_fusion:recovery/root/vendor/bin/touch_fusion \
